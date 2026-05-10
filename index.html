@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leela Devi Infra Realty & Capital Group</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+RESET
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+:root{
+
+--bg:#07152f;
+--bg2:#0b1d3d;
+--card:#10264d;
+
+--text:#ffffff;
+--text2:#d6d6d6;
+
+--gold:#f7c948;
+
+--border:rgba(255,215,0,0.15);
+
+}
+
+/* LIGHT MODE */
+
+body.light-mode{
+
+--bg:#f4f7fb;
+--bg2:#ffffff;
+--card:#ffffff;
+
+--text:#07152f;
+--text2:#4d5a73;
+
+--gold:#d4a017;
+
+--border:rgba(0,0,0,0.08);
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+transition:0.4s;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 40px;
+
+background:rgba(0,0,0,0.45);
+
+backdrop-filter:blur(12px);
+
+z-index:1000;
+
+border-bottom:1px solid var(--border);
+
+}
+
+.logo-box{
+
+display:flex;
+align-items:center;
+gap:12px;
+
+}
+
+.logo-box img{
+
+width:60px;
+height:60px;
+object-fit:contain;
+
+filter:drop-shadow(0 0 12px gold);
+
+}
+
+.logo-box h2{
+
+font-size:22px;
+color:var(--gold);
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+color:var(--text);
+
+margin-left:22px;
+
+font-size:15px;
+
+transition:0.3s;
+
+}
+
+.nav-links a:hover{
+
+color:var(--gold);
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),
+url('banner.jpg') center/cover no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+padding:20px;
+
+}
+
+body.light-mode .hero{
+
+background:
+linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.60)),
+url('banner.jpg') center/cover no-repeat;
+
+}
+
+.hero-content{
+
+max-width:1000px;
+
+}
+
+.hero-content img{
+
+width:200px;
+
+margin-bottom:25px;
+
+filter:drop-shadow(0 0 25px gold);
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* PREMIUM TITLE */
+
+.hero-content h1{
+
+font-size:72px;
+
+font-weight:800;
+
+line-height:1.15;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+margin-bottom:25px;
+
+background:linear-gradient(
+45deg,
+#ffd54f,
+#fff2b2,
+#f7c948,
+#ffcc00
+);
+
+background-size:300% 300%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:goldText 6s ease infinite;
+
+}
+
+body.light-mode .hero-content h1{
+
+background:linear-gradient(
+45deg,
+#07152f,
+#1f3b73,
+#0b2a5c,
+#224b8f
+);
+
+background-size:300% 300%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+@keyframes goldText{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+.hero-content p{
+
+font-size:22px;
+
+color:var(--text2);
+
+margin-bottom:35px;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:linear-gradient(45deg,var(--gold),#ffe082);
+
+color:#07152f;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:50px;
+
+transition:0.3s;
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* SECTION */
+
+.section{
+
+padding:100px 20px;
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:var(--gold);
+
+}
+
+/* CARDS */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:var(--card);
+
+padding:25px;
+
+border-radius:22px;
+
+border:1px solid var(--border);
+
+transition:0.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+margin-bottom:18px;
+
+}
+
+.card h3{
+
+font-size:24px;
+
+margin-bottom:12px;
+
+color:var(--gold);
+
+}
+
+.card p{
+
+line-height:1.8;
+
+color:var(--text2);
+
+}
+
+/* EXPAND SECTION */
+
+.loan-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.details-btn{
+
+margin-top:15px;
+
+padding:12px 25px;
+
+background:linear-gradient(45deg,var(--gold),#ffe082);
+
+border:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+cursor:pointer;
+
+color:#07152f;
+
+transition:0.3s;
+
+}
+
+.details-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+.loan-details{
+
+max-height:0;
+
+overflow:hidden;
+
+transition:0.5s ease;
+
+margin-top:15px;
+
+}
+
+.loan-details.active{
+
+max-height:400px;
+
+}
+
+.loan-details ul{
+
+padding-left:20px;
+
+}
+
+.loan-details li{
+
+margin-bottom:12px;
+
+color:var(--text2);
+
+line-height:1.7;
+
+font-size:15px;
+
+}
+
+/* REVIEWS */
+
+.review-top{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:40px;
+
+flex-wrap:wrap;
+
+margin-bottom:60px;
+
+}
+
+.review-rating,
+.review-qr{
+
+background:var(--card);
+
+padding:40px;
+
+border-radius:25px;
+
+border:1px solid var(--border);
+
+}
+
+.review-rating h1{
+
+font-size:60px;
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+}
+
+.review-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:15px 30px;
+
+background:linear-gradient(45deg,var(--gold),#ffe082);
+
+color:#07152f;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+}
+
+.review-qr img{
+
+width:180px;
+
+border-radius:15px;
+
+}
+
+/* ABOUT */
+
+.about-container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.about-image img{
+
+width:100%;
+
+border-radius:25px;
+
+}
+
+.about-content h2{
+
+font-size:45px;
+
+color:var(--gold);
+
+margin-bottom:25px;
+
+}
+
+.about-content p{
+
+line-height:2;
+
+color:var(--text2);
+
+margin-bottom:18px;
+
+}
+
+/* CONTACT */
+
+.contact-box{
+
+background:var(--card);
+
+padding:40px;
+
+border-radius:25px;
+
+border:1px solid var(--border);
+
+}
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-bottom:35px;
+
+}
+
+.info-card{
+
+background:rgba(255,255,255,0.04);
+
+padding:25px;
+
+border-radius:18px;
+
+border:1px solid var(--border);
+
+}
+
+.info-card h4{
+
+color:var(--gold);
+
+margin-bottom:12px;
+
+}
+
+.info-card p,
+.info-card a{
+
+color:var(--text2);
+
+line-height:1.9;
+
+text-decoration:none;
+
+}
+
+/* FORM */
+
+select,
+input,
+textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:18px;
+
+border:none;
+
+border-radius:12px;
+
+background:rgba(255,255,255,0.08);
+
+color:var(--text);
+
+border:1px solid var(--border);
+
+}
+
+textarea{
+
+height:130px;
+
+resize:none;
+
+}
+
+button{
+
+padding:15px 35px;
+
+background:linear-gradient(45deg,var(--gold),#ffe082);
+
+border:none;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+color:#07152f;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+background:#020814;
+
+text-align:center;
+
+padding:30px;
+
+margin-top:60px;
+
+font-size:14px;
+
+color:#bbb;
+
+}
+
+/* THEME BUTTON */
+
+.theme-toggle{
+
+position:fixed;
+
+bottom:25px;
+right:25px;
+
+width:55px;
+height:55px;
+
+border-radius:50%;
+
+background:linear-gradient(45deg,var(--gold),#ffe082);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.navbar{
+
+padding:15px 20px;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.about-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* END */
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="logo-box">
+
+<img src="logo.png">
+
+<h2>Leela Devi Group</h2>
+
+</div>
+
+<div class="nav-links">
+
+<a href="#services">Services</a>
+<a href="#gallery">Projects</a>
+<a href="#reviews">Reviews</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="logo.png">
+
+<h1>
+Leela Devi Infra Realty & Capital Group
+</h1>
+
+<p>
+Property • Construction • Finance Solutions
+</p>
+
+<a href="#contact" class="hero-btn">
+Contact Now
+</a>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+<h2 class="section-title">
+Our Services
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="assets/building1.png">
+
+<h3>🏗 Infrastructure</h3>
+
+<p>
+Premium construction and infrastructure development services.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="assets/property1.png">
+
+<h3>🏠 Realty</h3>
+
+<p>
+Trusted property buying and investment solutions.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="assets/office1.png">
+
+<h3>💰 Finance</h3>
+
+<p>
+Home loan, business loan and finance consultancy services.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="gallery">
+
+<h2 class="section-title">
+Our Premium Projects
+</h2>
+
+<style>
+
+/* =========================
+PROJECT IMAGE SLIDER
+========================= */
+
+.project-slider{
+position:relative;
+width:100%;
+height:220px;
+overflow:hidden;
+border-radius:15px;
+margin-bottom:18px;
+}
+
+.project-slider img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+animation:sliderAnimation 16s infinite;
+}
+
+.project-slider img:nth-child(1){ animation-delay:0s; }
+.project-slider img:nth-child(2){ animation-delay:4s; }
+.project-slider img:nth-child(3){ animation-delay:8s; }
+.project-slider img:nth-child(4){ animation-delay:12s; }
+
+@keyframes sliderAnimation{
+
+0%{opacity:0;}
+8%{opacity:1;}
+25%{opacity:1;}
+33%{opacity:0;}
+100%{opacity:0;}
+
+}
+
+/* =========================
+POPUP MODAL
+========================= */
+
+.popup-overlay{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.75);
+
+display:none;
+
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+backdrop-filter:blur(8px);
+
+}
+
+.popup-box{
+
+width:90%;
+max-width:650px;
+
+background:var(--card);
+
+padding:35px;
+
+border-radius:25px;
+
+border:1px solid var(--border);
+
+position:relative;
+
+animation:popupShow 0.4s ease;
+
+max-height:85vh;
+
+overflow-y:auto;
+
+}
+
+@keyframes popupShow{
+
+from{
+transform:scale(0.7);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+.close-popup{
+
+position:absolute;
+
+top:15px;
+right:20px;
+
+font-size:24px;
+
+cursor:pointer;
+
+color:var(--gold);
+
+}
+
+.popup-box h2{
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.popup-box ul{
+
+padding-left:20px;
+
+}
+
+.popup-box li{
+
+margin-bottom:14px;
+
+line-height:1.8;
+
+color:var(--text2);
+
+}
+
+</style>
+
+<!-- =========================
+PROJECTS SECTION
+========================= -->
+
+<section class="section" id="gallery">
+
+<!-- =========================
+INFRASTRUCTURE PROJECTS
+========================= -->
+
+<h2 style="color:var(--gold); margin-top:40px; margin-bottom:25px;">
+🏗 Infrastructure & Construction Services
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="project-slider">
+
+<img src="assets/building1.png">
+<img src="assets/building2.png">
+<img src="assets/building3.png">
+<img src="assets/building4.png">
+
+</div>
+
+<h3>🏢 Commercial Infrastructure</h3>
+
+<p>
+Premium commercial infrastructure and office construction services.
+</p>
+
+<button class="details-btn"
+
+onclick="openPopup(
+
+'🏗 Commercial Infrastructure Services',
+
+[
+
+'✅ Commercial Building Development & Execution',
+
+'✅ Corporate Office Infrastructure Solutions',
+
+'✅ Shopping Mall & Commercial Complex Construction',
+
+'✅ Smart Lighting & Electrical Installation Services',
+
+'✅ Advanced Electrical System Planning & Setup',
+
+'✅ Plumbing, Pipeline & Water Management Solutions',
+
+'✅ Civil Contractor & Project Management Support',
+
+'✅ Architectural Planning, Design & Site Supervision'
+
+]
+
+)">
+
+View Services
+
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="project-slider">
+
+<img src="assets/building5.png">
+<img src="assets/building6.png">
+<img src="assets/building7.png">
+<img src="assets/building8.png">
+
+</div>
+
+<h3>🏠 Residential Construction</h3>
+
+<p>
+Modern residential building and premium home construction solutions.
+</p>
+
+<button class="details-btn"
+
+onclick="openPopup(
+
+'🏠 Residential Construction Services',
+
+[
+
+'✅ Luxury House & Villa Construction',
+
+'✅ Apartment & Residential Building Development',
+
+'✅ Turnkey Home Construction Solutions',
+
+'✅ Premium Interior & Exterior Finishing',
+
+'✅ Modular Kitchen & False Ceiling Work',
+
+'✅ Smart Lighting & Electrical Fitting',
+
+'✅ Plumbing & Water Pipeline Installation',
+
+'✅ Renovation & Modern Home Upgradation'
+
+]
+
+)">
+
+View Services
+
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="project-slider">
+
+<img src="assets/building9.png">
+<img src="assets/building10.png">
+<img src="assets/building11.png">
+<img src="assets/building12.png">
+
+</div>
+
+<h3>🏛 Government Projects</h3>
+
+<p>
+Government infrastructure and contractor project execution support services.
+</p>
+
+<button class="details-btn"
+
+onclick="openPopup(
+
+'🏛 Government Infrastructure Services',
+
+[
+
+'✅ Government Infrastructure Development Projects',
+
+'✅ Road, Bridge & Public Utility Construction',
+
+'✅ EPC & Government Tender Project Execution',
+
+'✅ Street Lighting & Electrical Infrastructure Work',
+
+'✅ Water Supply, Drainage & Pipeline Systems',
+
+'✅ Contractor Consultancy & Site Management',
+
+'✅ Government Project Finance & Funding Support',
+
+'✅ Industrial & Public Sector Infrastructure Services'
+
+]
+
+)">
+
+View Services
+
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+PROPERTY SECTION
+========================= -->
+
+<h2 style="color:var(--gold); margin-top:80px; margin-bottom:25px;">
+🏠 Property Buy • Sell • Investment Services
+</h2>
+
+<div class="cards">
+
+<!-- =========================
+PLOT BUY & SELL
+========================= -->
+
+<div class="card loan-card">
+
+<div class="project-slider">
+
+<img src="assets/property1.png">
+<img src="assets/property2.png">
+<img src="assets/property3.png">
+<img src="assets/property4.png">
+
+</div>
+
+<h3>🏞 Plot Buy & Sell</h3>
+
+<p>
+Residential and commercial plots available for buying and selling.
+</p>
+
+<button class="details-btn"
+
+onclick="openPopup(
+
+'🏞 Plot Buy & Sell Services',
+
+[
+
+'✅ Residential Plot Purchase & Sale',
+
+'✅ Commercial Plot Investment Solutions',
+
+'✅ Prime Location Property Consultancy',
+
+'✅ Legal Documentation & Registration Support',
+
+'✅ Property Verification & Site Inspection',
+
+'✅ Client Property Listing & Promotion'
+
+]
+
+)">
+
+View Services
+
+</button>
+
+</div>
+
+<!-- =========================
+VILLA & HOUSE
+========================= -->
+
+<div class="card loan-card">
+
+<div class="project-slider">
+
+<img src="assets/property5.png">
+<img src="assets/property6.png">
+<img src="assets/property7.png">
+<img src="assets/property8.png">
+
+</div>
+
+<h3>🏡 Villa & House Services</h3>
+
+<p>
+Luxury villas and residential properties available for buy and sell services.
+</p>
+
+<button class="details-btn"
+
+onclick="openPopup(
+
+'🏡 Villa & House Services',
+
+[
+
+'✅ Luxury Villa Purchase & Resale',
+
+'✅ Independent House Buy & Sell Services',
+
+'✅ Ready To Move Premium Homes',
+
+'✅ Property Valuation & Market Analysis',
+
+'✅ Verified Buyer & Seller Assistance',
+
+'✅ Home Investment Consultancy Solutions'
+
+]
+
+)">
+
+View Services
+
+</button>
+
+</div>
+
+<!-- =========================
+SELL PROPERTY
+========================= -->
+
+<div class="card loan-card">
+
+<div class="project-slider">
+
+<img src="assets/property9.png">
+<img src="assets/property10.png">
+<img src="assets/property11.png">
+<img src="assets/property12.png">
+
+</div>
+
+<h3>🏢 Sell Your Property</h3>
+
+<p>
+List your property and connect with genuine buyers quickly.
+</p>
+
+<button class="details-btn"
+onclick="openSellPopup()">
+
+View Services
+
+</button>
+
+</div>
+
+<!-- =========================
+SELL PROPERTY POPUP BOX
+ADD BEFORE </body>
+========================= -->
+
+<div class="popup-overlay"
+id="sellPopupOverlay">
+
+<div class="popup-box">
+
+<span class="close-popup"
+onclick="closeSellPopup()">
+
+✖
+
+</span>
+
+<h2>
+🏢 Sell Your Property
+</h2>
+
+<ul>
+
+<li>✅ Sell Plot, Villa, House & Commercial Property</li>
+
+<li>✅ Genuine Buyer Support</li>
+
+<li>✅ Property Promotion & Marketing</li>
+
+<li>✅ Fast Deal Closing Assistance</li>
+
+<li>✅ Documentation Support</li>
+
+<li>📞 Direct Call Support: 9009103001</li>
+
+<li>💬 WhatsApp Assistance Available</li>
+
+</ul>
+
+<!-- =========================
+BUTTONS
+========================= -->
+
+<div class="sell-btns">
+
+<a href="tel:9009103001"
+class="hero-btn">
+
+📞 Call Now
+
+</a>
+
+<a href="https://wa.me/919009103001"
+target="_blank"
+class="hero-btn">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+<!-- =========================
+PROPERTY FORM
+========================= -->
+
+<form class="sell-form">
+
+<input type="text"
+placeholder="Property Owner Name">
+
+<input type="text"
+placeholder="Mobile Number">
+
+<input type="text"
+placeholder="Property Location">
+
+<select>
+
+<option>Select Property Type</option>
+
+<option>Residential Plot</option>
+
+<option>Commercial Plot</option>
+
+<option>Villa</option>
+
+<option>House</option>
+
+<option>Office</option>
+
+<option>Shop</option>
+
+</select>
+
+<textarea placeholder="Property Details"></textarea>
+
+<button type="submit">
+
+Submit Property
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- =========================
+CSS ADD INSIDE <style>
+========================= -->
+
+<style>
+
+.sell-btns{
+
+display:flex;
+
+gap:12px;
+
+flex-wrap:wrap;
+
+margin:25px 0;
+
+}
+
+.sell-form{
+
+margin-top:20px;
+
+}
+
+.sell-form button{
+
+width:100%;
+
+}
+
+</style>
+
+<!-- =========================
+SCRIPT ADD BEFORE </body>
+========================= -->
+
+<script>
+
+function openSellPopup(){
+
+document.getElementById("sellPopupOverlay")
+.style.display="flex";
+
+}
+
+function closeSellPopup(){
+
+document.getElementById("sellPopupOverlay")
+.style.display="none";
+
+}
+
+</script>
+
+</div>
+
+
+<!-- =========================
+FINANCE SECTION
+========================= -->
+
+<h2 style="color:var(--gold); margin-top:80px; margin-bottom:25px;">
+💰 Finance & Loan Services
+</h2>
+
+<div class="cards">
+
+<!-- =========================
+HOME LOAN
+========================= -->
+
+<div class="card loan-card">
+
+<div class="project-slider">
+
+<img src="assets/office1.png">
+<img src="assets/office2.png">
+<img src="assets/office3.png">
+<img src="assets/office4.png">
+</div>
+
+<h3>🏠 Home Loan Services</h3>
+
+<p>
+Fast and secure home loan approval support.
+</p>
+
+<button class="details-btn"
+
+onclick="openPopup(
+
+'🏠 Home Loan Services',
+
+[
+
+'✅ Home Purchase Loan',
+
+'✅ Home Construction Loan',
+
+'✅ Plot + Construction Loan',
+
+'✅ Balance Transfer Loan',
+
+'✅ Top-Up Home Loan',
+
+'✅ Property Mortgage Loan',
+
+'✅ Home Renovation Loan',
+
+'✅ Low Interest EMI Assistance',
+
+'✅ Fast Approval & Documentation Support'
+
+]
+
+)">
+
+View Loan Services
+
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="project-slider">
+
+<img src="assets/office5.png">
+<img src="assets/office6.png">
+<img src="assets/office7.png">
+<img src="assets/office8.png">
+
+</div>
+
+<h3>💼 Business Loan Services</h3>
+
+<p>
+Business finance and project funding support.
+</p>
+
+<button class="details-btn"
+
+onclick="openPopup(
+
+'💼 Business Loan Services',
+
+[
+
+'✅ MSME Business Loan',
+
+'✅ Startup Funding Support',
+
+'✅ Working Capital Loan',
+
+'✅ Machinery & Equipment Loan',
+
+'✅ Shop & Office Loan',
+
+'✅ Business Expansion Funding',
+
+'✅ Government Scheme Loan',
+
+'✅ Invoice & Project Finance Support',
+
+'✅ Fast Approval & Documentation Assistance'
+
+]
+
+)">
+
+View Loan Services
+
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="project-slider">
+
+<img src="assets/office9.png">
+<img src="assets/office10.png">
+<img src="assets/office11.png">
+<img src="assets/office12.png">
+
+</div>
+
+<h3>🏛 Govt. Project Loan</h3>
+
+<p>
+Government project finance and contractor funding support.
+</p>
+
+<button class="details-btn"
+
+onclick="openPopup(
+
+'🏛 Govt. Project Loan Services',
+
+[
+
+'✅ Tender Funding Support',
+
+'✅ Contractor Project Loan',
+
+'✅ Infrastructure Finance Solutions',
+
+'✅ Government Scheme Funding',
+
+'✅ EPC Project Finance',
+
+'✅ Industrial Project Support',
+
+'✅ Public Sector Project Assistance',
+
+'✅ Working Capital for Contractors',
+
+'✅ Documentation & Financial Consultancy'
+
+]
+
+)">
+
+View Loan Services
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+POPUP HTML
+ADD BEFORE </body>
+========================= -->
+
+<div class="popup-overlay" id="popupOverlay">
+
+<div class="popup-box">
+
+<span class="close-popup" onclick="closePopup()">
+✖
+</span>
+
+<div id="popupContent"></div>
+
+</div>
+
+</div>
+
+<!-- =========================
+ADD THIS SCRIPT BEFORE </body>
+========================= -->
+
+<script>
+
+function openPopup(title, services){
+
+document.getElementById("popupOverlay").style.display="flex";
+
+let listHTML="";
+
+services.forEach(service=>{
+
+listHTML += `<li>${service}</li>`;
+
+});
+
+document.getElementById("popupContent").innerHTML = `
+
+<h2>${title}</h2>
+
+<ul>${listHTML}</ul>
+
+`;
+
+}
+
+function closePopup(){
+
+document.getElementById("popupOverlay").style.display="none";
+
+}
+
+</script>
+<section class="section" id="about">
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="banner1.jpg">
+
+</div>
+
+<div class="about-content">
+
+<h2>About Leela Devi Group</h2>
+
+<p>
+Leela Devi Infra Realty & Capital Group is a trusted company in property, infrastructure and finance solutions.
+</p>
+
+<p>
+We provide premium construction services, property consultancy and professional financial guidance with trust and transparency.
+</p>
+
+<p>
+Our mission is to build strong relationships and create long-term investment opportunities for every client.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+FORM CSS FIX
+REPLACE OLD FORM CSS
+========================= -->
+
+<style>
+
+/* FORM */
+
+select,
+input,
+textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:18px;
+
+border:none;
+
+border-radius:12px;
+
+background:rgba(255,255,255,0.08);
+
+color:var(--text);
+
+border:1px solid var(--border);
+
+font-size:15px;
+
+outline:none;
+
+}
+
+/* SELECT FIX */
+
+select{
+
+appearance:none;
+
+background-color:var(--card);
+
+color:var(--text);
+
+cursor:pointer;
+
+}
+
+select option{
+
+background:#10264d;
+
+color:white;
+
+}
+
+body.light-mode select option{
+
+background:white;
+
+color:#07152f;
+
+}
+
+textarea{
+
+height:130px;
+
+resize:none;
+
+}
+
+</style>
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<div class="contact-box">
+
+<div class="contact-grid">
+
+<div class="info-card">
+
+<h4>📍 Address</h4>
+
+<p>
+S-06, F-01, New Jail Rd,<br>
+near Vmart Mall,<br>
+Karond, Bhopal,<br>
+Madhya Pradesh 462038
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>📞 Contact</h4>
+
+<p>
+Loan — 7898744650<br>
+Property — 9009103001<br>
+Construction — 8349410633
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>📸 Social Media</h4>
+
+<p>
+
+Instagram —
+<a href="https://instagram.com/leela_devi_group">
+@leela_devi_group
+</a>
+
+<br><br>
+
+Facebook —
+<a href="https://facebook.com/LeelaDeviFamily">
+@LeelaDeviFamily
+</a>
+
+<br><br>
+
+Gmail —
+<a href="mailto:leeladevigroup@gmail.com">
+leeladevigroup@gmail.com
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+<form>
+
+<select>
+
+<option>Select Service</option>
+
+<option>Loan Inquiry</option>
+
+<option>Property Inquiry</option>
+
+<option>Construction Inquiry</option>
+
+</select>
+
+<input type="text" placeholder="Your Name">
+
+<input type="text" placeholder="Phone Number">
+
+<textarea placeholder="Your Requirement"></textarea>
+
+<button type="submit">
+Submit Inquiry
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+© 2026 Leela Devi Infra Realty & Capital Group
+
+</div>
+
+<!-- THEME BUTTON -->
+
+<div class="theme-toggle" onclick="toggleTheme()">
+🌙
+</div>
+
+<script>
+
+function toggleTheme(){
+
+document.body.classList.toggle("light-mode");
+
+}
+
+function toggleLoanDetails(id){
+
+var section=document.getElementById(id);
+
+section.classList.toggle("active");
+
+}
+
+</script>
+
+</body>
+
+</html>
